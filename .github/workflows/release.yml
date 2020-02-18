@@ -10,10 +10,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
-      with: 
-        submodules: true
-    - name: install packages
-      run: sudo apt-get install xorg-dev
     - name: configure
       run: |
         mkdir build
@@ -36,8 +32,6 @@ jobs:
     runs-on: windows-latest
     steps:
     - uses: actions/checkout@v1
-      with: 
-        submodules: true
     - name: configure
       run: |
         mkdir build
@@ -60,8 +54,6 @@ jobs:
     runs-on: macos-latest
     steps:
     - uses: actions/checkout@v1
-      with: 
-        submodules: true
     - name: configure
       run: |
         mkdir build
