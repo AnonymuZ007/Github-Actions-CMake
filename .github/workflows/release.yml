@@ -80,17 +80,17 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@master
       - uses: actions/download-artifact@v1
-        name: Upload linux build
+        name: download linux build
         with:
           name: helloworld-linux
           path: .
       - uses: actions/download-artifact@v1
-        name: Upload windows build
+        name: download windows build
         with:
           name: helloworld-windows
           path: .
       - uses: actions/download-artifact@v1
-        name: Upload macos build
+        name: download macos build
         with:
           name: helloworld-macos
           path: .
